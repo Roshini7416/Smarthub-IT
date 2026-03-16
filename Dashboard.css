@@ -1,0 +1,71 @@
+/* src/components/Dashboard.css */
+.dashboard-wrapper {
+    padding: 40px;
+    background-color: #f0f7ff; /* Session 1: Soft Blue Portal Theme */
+    min-height: 100vh;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.dashboard-header {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e0e8f0;
+    padding-bottom: 15px;
+}
+
+.dashboard-header h1 span {
+    color: #006aff; /* Professional Blue Accent */
+}
+
+/* Session 5: The Responsive Bento Grid */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Session 4: Card Styling for Interactive Feedback */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 106, 255, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Interactive hover effect */
+}
+
+/* Responsive Mobile Adjustments */
+@media (max-width: 600px) {
+    .dashboard-wrapper {
+        padding: 20px;
+    }
+    .dashboard-grid {
+        grid-template-columns: 1fr; /* Stacks cards on small screens */
+    }
+}
+.temperature-card {
+    border-left: 5px solid #ff5722; /* Highlighting the temp card with orange */
+    background: #fff5f2;
+}
+
+.temp-value {
+    font-size: 2rem;
+    color: #ff5722;
+    margin: 10px 0;
+}
+
+.active {
+    background-color: #e3f2fd;
+    border-color: #2196f3;
+}
+
+.toggle-btn {
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background: #2196f3;
+    color: white;
+}
